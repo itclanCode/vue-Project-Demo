@@ -13,18 +13,20 @@
 
 2. 商品详情组件
 
-![](img/02商品详情页组件.png)
+![](component-example/02商品详情页组件.png)
 
 3. 购物车清单组件
 
-![](img/03购物清单组件.png)
+![](component-example/03购物清单组件.png)
 4. 结算页组件
 
-![](img/04结算页组件.png)
+![](component-example/04结算页组件.png)
 5. 订单详情组件
-![](img/05订单详情组件.png)
+6. 
+![](component-example/05订单详情组件.png)
+
 6. 订单列表组件
-![](img/06订单列表组件.png)
+![](component-example/06订单列表组件.png)
 
 ### 技术栈
 
@@ -51,7 +53,7 @@ smartation
 * src
     * assets
        * css
-       * img
+       * component-example
        * js
     * components:存放所有的组件(一般放公共组件) 
        * header-nav:头部组件
