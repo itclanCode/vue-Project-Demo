@@ -1,0 +1,131 @@
+.vta-container {
+  .menu-container {
+    font-size:14px;
+    .shenbao-date{
+      position: absolute;
+      right: 6px;
+      top:0;
+      color: #FD3C3D;
+    }
+  }
+  span.text-over{
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+   // search.styl
+  .form-wrap {
+    text-align: left;
+    margin-left: 5px;
+    padding-top: 10px;
+    position: relative;
+    min-height:50px;
+    .select-part{
+      font-size: 13px;
+      padding-left: 10px;
+      .plsb{
+        display:inline-block;
+        width:88px;
+        height:32px;
+        text-align:center;
+        line-height: 32px;
+        border-radius:4px;
+        border:1px solid rgba(39,112,233,1);
+        margin-left:12px;
+        cursor:pointer;
+        color: #409EFF;
+      }
+    }
+    .search-code{
+      position:relative;
+      >i.el-icon-rep-xiazai5{
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor:pointer;
+      }
+      .xycode{
+        input{
+          min-width: 380px;
+          height: 32px;
+          border-radius: 20px;
+          border: 1px solid rgba(153,153,153,0.42);
+        }
+      }
+    }
+  }
+  // 主体
+  .vtaDeclare {
+    background-color: #fff;
+    .el-icon-rep-wuuiconsuotanhao-copy{
+      color: #f00;
+    }
+    .el-table{
+      max-height:440px;
+      .cell{
+        font-size: 13px;
+      }
+      td.is-center,th.is-center{
+        padding: 8px 0px;
+      }
+      .el-table__row{
+        td:last-child{
+          span{
+            color:#409EFF;
+            cursor:pointer;
+          }
+        }
+      }
+    }
+    .el-loading-spinner{
+      left: 50%;
+      transform:translate(-50%, -50%);
+      -webkit-transform:translate(-50%, -50%)
+    }
+    .select-btn-all{
+      label{
+        display:none;
+      }
+    }
+    .el-table{
+      .el-table__header-wrapper{
+        .has-gutter{
+          tr{
+            th{
+              padding: 10px 0px;
+              font-weight: bold;
+              color: #111;
+            }
+          }
+        }
+      }
+    }
+    .vta-title {
+      text-align: left;
+      font-size: 20px;
+      color: #000;
+    }
+    .vta-search {
+      text-align: left;
+    }
+    .vatInput-search {
+      width: 75%;
+    }
+    .declareDateCon {
+      font-size: 18px;
+      margin-top: 20px;
+      text-align: right;
+    }
+    .declareDate {
+      font-weight: 600;
+      color: #2770e9;
+    }
+  }
+}
+// 弹框
+.fail-model {
+  .el-dialog__header{
+  padding:0 !important;
+  }
+}

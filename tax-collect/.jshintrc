@@ -1,0 +1,16 @@
+{
+    "es3": true,  //ES3标准
+    "browser": true,//浏览器环境,这样语法检查就认识 document,location等这些浏览器环境下的全局变量
+    "devel": true,//这样语法检查就认识 console,alert等这些全局方法
+    "jquery": true,//让jshint认识jquery的全局变量
+    "strict": true,//每次写js必须开启严格模式,也就是如果你没加"use strict";这句话,就报错
+    "latedef":true,//如果你使用一个未声明的变量,报错
+    "globals":{  //定义一些全局变量,因为我使用seajs,所以告诉jshint下面这些变量是我的框架中有定义的,不要报错
+        "seajs": true,
+        "module": true,
+        "define": true,
+        "exports": true,
+        "gulp": true,
+        "require": true
+    }
+}

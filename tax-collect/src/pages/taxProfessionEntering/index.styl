@@ -1,0 +1,232 @@
+
+.taxenter-container {
+  text-align: left;
+  width: 100%;
+  .adds{
+    .add{
+    color :#4680FF;
+    text-align :center;
+    font-size :14px;
+    .el-icon-circle-plus{
+      font-size:55px;
+      margin-top :20px;
+      margin-bottom :20px;
+    }
+  }
+  }
+  .year-date{
+    font-size:20px;
+    font-family:PingFangSC-Semibold;
+    color:#111;
+    padding:20px 15px 8px;
+  }
+  div.line{
+    border-bottom:1px solid rgba(197,197,197,1);
+    &:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+  }
+  .search-code {
+    position: relative;
+    .code {
+      input {
+        width: 380px;
+        height: 32px;
+        border-radius: 20px;
+        border: 1px solid rgba(153, 153, 153, 1);
+      }
+    }
+    .el-icon-rep-xiazai5 {
+      position: absolute;
+      top: 13px;
+      right: 11px;
+      cursor:pointer;
+    }
+  }
+
+  .taxprofess-container {
+    text-align: left;
+    padding-top: 0;
+
+    .el-card {
+      height: 172px;
+      margin-bottom: 20px;
+      text-align: left;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .card-header {
+      a {
+        font-size: 16px;
+        font-family: PingFangSC-Semibold;
+        color: #000;
+        line-height: 22px;
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+      }
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .tongyi-xycode {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      color: #000;
+      font-family: PingFangSC-Semibold;
+      cursor: text;
+      padding: 16px 0px;
+    }
+
+    .CommissionNumber {
+        .block{
+          display: inline-block;
+          width: 134px;
+          font-size: 14px;
+        }
+      }
+    ul.card-content {
+      display: -webkit-box;
+      display: box;
+
+      li {
+        flex: 1;
+        width:100%;
+
+        p {
+          padding-bottom: 12px;
+        }
+        .view{
+          color :#4680FF;
+          text-align :right;
+          // position: relative;
+          .el-icon-rep-jinru{
+          cursor: pointer;
+          font-size: 22px;
+        }
+        .enter{
+            visibility: hidden;
+            font-size: 14px;
+            margin-bottom: 4px;
+            position: relative;
+            bottom:3px;
+          }
+        }
+        .view:hover{
+         .enter{
+           visibility: visible;
+           font-size: 14px;
+           margin-bottom: 4px;
+            position: relative;
+            bottom:3px;
+         }
+          }
+      }
+    }
+  }
+}
+.taxProfessionInfo-container {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #606266;
+
+  .el-breadcrumb {
+    padding: 0;
+  }
+
+  .pro-title {
+    color: #303133;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .formInput {
+    float: left;
+    width: 40%;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  table >tr >td {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #dfdfdf;
+    padding: 12px 10px;
+    text-align: left;
+    line-height: 1.2;
+    span{
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 12px 10px;
+      line-height: 30px;
+    }
+  }
+
+  .reportColumn {
+    border:none;
+    padding:10px 0;
+  }
+  .el-table td, .el-table th{
+    color:#000;
+  }
+  .labels {
+    background: #ddedff;
+    width: 200px;
+    text-align: left ;
+    border-border-bottom: #DFDFDF;
+  }
+
+  .el-input.is-disabled .el-input__inner {
+    background-color: #f5f7fa;
+    border-color: #e4e7ed;
+    color: #c0c4cc;
+    cursor: not-allowed;
+  }
+
+  .el-form-item__error--inline {
+    float: left;
+    top: 12px;
+  }
+
+  .el-form-item__label:before {
+    content: '*';
+    color: #f56c6c;
+    margin-right: 6px;
+  }
+
+  .punish {
+    text-align: left;
+  }
+
+  .delete {
+    color: #4680FF;
+    cursor: pointer;
+    .el-button{
+      margin: 0 ;
+      padding: 0 ;
+      display: inline;
+    }
+  }
+
+  .el-checkbox__inner {
+    width: 20px;
+    height: 20px;
+  }
+}

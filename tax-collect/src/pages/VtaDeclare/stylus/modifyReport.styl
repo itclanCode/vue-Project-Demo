@@ -1,0 +1,97 @@
+@import './modifyItem.styl'
+.modifyReport {
+  .mod-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .modBorder {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebeef5;
+  }
+
+  .mod-headerBack {
+    background: #5C8FFF !important;
+    color:#fff;
+  }
+}
+
+.rightMenu {
+  position: fixed;
+  right: -360px;
+  top: 50px;
+  height: 100%;
+  z-index: 999;
+  border-left: 1px solid #ebeef5;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  transition: right 1s ease;
+  &:hover {
+   right: 0px;
+   transition: right 1s ease;
+  }
+  &:hover .menuBtn > i:first-child {
+    display: none;
+  }
+  &:hover .menuBtn > i:last-child {
+    display: inline;
+  }
+  .menuBtn {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -60px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-left: 1px solid #ebeef5;
+    border-radius: 50%;
+    background: #fff;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 6px;
+    font-size: 20px;
+    color: #4a90e2;
+    box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    & > i {
+      font-weight: bold !important;
+    }
+
+    & > i:last-child {
+      display: none;
+    }
+  }
+}
+
+.table-title {
+  text-align: left;
+}
+
+.rg-title {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #409eff;
+  font-weight: 700;
+}
+
+.rg-menu {
+  text-align: left;
+  margin-top: 10px;
+
+  .el-menu-item:focus, .el-menu-item:hover {
+    color: #409eff !important;
+    background: transparent;
+  }
+}
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity 1s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active for below version 2.1.8 */ {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+// 操作
+.option-btn {
+  padding: 18px 0;  
+}

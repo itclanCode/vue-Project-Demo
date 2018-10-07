@@ -1,0 +1,71 @@
+div[class^='modify-item'] {
+  width: 100%;
+  height:100%;
+  overflow:hidden;
+  .error {
+    color: red;
+    font-size:12px;
+  }
+  .mod-top-title {
+    text-align: center;
+    color: #111;
+    font-weight:bold;
+    font-size:18px;
+    padding: 10px 0px;
+  }
+  .modify-item-project{
+    text-align:left;
+    padding: 10px 0;
+    font-weight:bold;
+    color: #111;
+  }
+  .mod-list {
+    width:100%;
+    overflow:hidden;
+    padding: 10px 0;
+    &:last-child{
+      border-bottom: 1px solid #ebd6d6;
+    }
+    p {
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+
+      span:nth-of-type(2n) {
+        font-weight: bold;
+        color: #111;
+      }
+    }
+  }
+  .el-button {
+       padding: 8px 10px;
+  }
+
+  div.cell{
+    font-size:13px !important;
+  }
+}
+.modify-table{
+  margin: 10px 0 0;
+}
+.el-table__body-wrapper ::-webkit-scrollbar{
+  width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
+.el-table__body-wrapper ::-webkit-scrollbar-thumb{
+   border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.el-table__body-wrapper ::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.el-icon-rep-jianshao-copy{
+  font-size:27px;
+  cursor:pointer;  
+}

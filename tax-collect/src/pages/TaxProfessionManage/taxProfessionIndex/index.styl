@@ -1,0 +1,288 @@
+
+.taxProfession-container{
+  position:relative;
+  text-align:left;
+  // tab
+  .menu-rt {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .menu-rt{
+    flex:1;
+    text-align:right;
+  }
+  .update-time{
+    display:inline-block;
+    color: #FD3C3D;
+    font-size:16px;
+    padding-bottom:16px;
+  }
+  .tuisong-part{
+    display:inline-block;
+    padding-left: 26px;
+    .tuisong{
+      border-radius: 23px;
+      -webkit-border-radius: 23px;
+    }
+  }
+    @media only screen and (max-width: 1200px) {
+    .el-col-lg-8 {
+        width: 32.3% !important;
+    }
+  }
+  // card
+  
+  .card-container{
+      height: 100%;
+      min-height: 400px;
+      position: relative;
+      .year-date{
+          font-size:20px;
+          font-family:PingFangSC-Semibold;
+          color:#111;
+          padding:16px 15px 8px;
+        }
+        div.line{
+          border-bottom:1px solid rgba(197,197,197,1);
+          padding-bottom:26px;
+        }
+        div.line:last-child{
+          border-bottom:none;
+          padding-bottom:0;
+        }
+      .box-card{
+      padding: 15px 16px 14px 16px;
+      text-align: left;
+      margin: 6px 5px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      min-height:208px;
+    .el-card__body{
+      padding:0px;
+    }
+    .text-over{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .card-header{
+      max-width: 325px;
+      cursor:text;
+      -moz-user-select: text;  
+      -webkit-user-select: text;  
+      -ms-user-select: text;
+      user-select:text;
+      a{
+        font-size:16px;
+        font-family:PingFangSC-Semibold;
+        color:rgba(0,0,0,1);
+        line-height:22px;
+        font-weight:bold;
+        cursor:text;
+        -moz-user-select: text;  
+        -webkit-user-select: text;  
+        -ms-user-select: text;
+        user-select:text;
+      }
+    }
+    div.tongyi-xycode{
+      font-size:13px;
+      color:#111;
+      font-family:PingFangSC-Semibold;
+      font-weight: bold;
+      padding: 16px 0px;
+      border-bottom:1px solid rgba(202,202,202,1);
+      max-width: 100%;
+      a{
+        vertical-align: bottom;
+        color:#111;
+        cursor:text;
+        -moz-user-select: text;  
+        -webkit-user-select: text;  
+        -ms-user-select: text;
+        user-select:text;
+      }
+    }
+    div.look-btn{
+      position: absolute;
+      bottom: 7px;
+      right: 16px;
+      cursor:pointer;
+      padding-right: 16px;
+      width: 100%;
+      line-height: 46px;
+      p{
+        float:right;
+        color: #4680FF;
+        i{
+          position:relative;
+          font-size: 18px;
+          top:2px;
+        }
+        span{
+          font-size:13px;
+        }
+      }
+    }
+    ul.card-content{
+      padding-top:16px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      li{
+        width: 100%;
+        height: 100%;
+        overflow:hidden;
+        font-size:13px;
+        &:last-child{
+          padding-bottom:40px;
+          margin-top:16px;
+          span:last-child{
+            padding-left:10px;
+          }
+        }
+        p{
+          display:inline-block;
+          width: 50%;
+          float:left;
+          padding-top:16px;
+          color:#000;
+          >span.error{
+            color:#D0021B;
+          }
+          // &:last-child{
+          //   padding-bottom:40px;
+          // }
+          // span:last-child{
+          //   padding-left:12px;
+          // }
+        }
+      }
+    }
+    &.active{
+      ul.card-content {
+        li{
+          p, span{
+            color: hsla(0, 0%, 53%, 0.95)
+          }
+          p{
+            span:last-child{
+              padding-left:10px;
+            }
+          }
+        }
+      }
+    }
+    &.active:before{
+      content:'';
+      background:url('./img/status.png') no-repeat;
+      display:inline-block;
+      width:113px;
+      height:42px;
+      bottom: 17px;
+      right: 33px;
+      position: absolute;
+    }
+    &.active:after,&.default:before{
+      content: '';
+      display:inline-block;
+      height:85%;
+      width:3px;
+      position:absolute;
+      left:17px;
+      top:15px;
+    }
+    &.active:after{
+      background-color:#2770E9;
+    }
+    &.default:before{
+      background-color:#999;
+    }
+  }
+  }
+  
+  // form
+.form-wrap{
+    text-align: left;
+    padding:20px 0 0;
+    position:relative;
+    .el-form-item--small, .el-form-item{
+      margin-bottom:0px !important;
+    }
+    .date{
+      margin-bottom: 0 !important;
+      position: relative;
+      top: -4px;
+    }
+    .el-date-editor--datetimerange{
+      width:370px;
+      height:32px;
+      background:rgba(255,255,255,1);
+      border-radius: 4px;
+      border: 1px solid rgba(218,218,218,1);
+    }
+    .el-icon-date{
+      position:relative;
+      top:-3px;
+      color:#2770E9;
+    }
+    .el-select{
+      top:-4px;
+      input {
+        width:220px;
+        height:32px;
+        background:rgba(255,255,255,1);
+        border-radius:4px;
+        border:1px solid rgba(218,218,218,1);
+      }
+    }
+    .resource{
+      width: 218px;
+      height: 30px;
+      background: #fff;
+      border-radius: 4px;
+      line-height: 30px;
+      border: 1px solid #dadada;
+      padding: 0px 17px 0px;
+      >span{
+        color:#878787;
+        padding-right:22px;
+      }
+      span.el-radio__label{
+        color:#111;
+      }
+    }
+   .tuisong{
+        top: -3px;
+        position: relative;
+        width:140px !important;
+        height:32px !important;
+        line-height:9px;
+        border-radius:23px !important;
+      }
+    .search-code {
+      position:relative;
+      .xycode{
+        input{
+          width:380px;
+          height:32px;
+          border-radius:20px;
+          border:1px solid#9999996b;
+        }
+       }
+       .el-icon-rep-xiazai5{
+         position:absolute;
+         top: 13px;
+         right: 10px;
+         cursor:pointer;
+       }
+    }
+  }
+}
+ // 加载
+  .mc-loading{
+   .el-loading-mask{
+      background-color: transparent;
+    }
+}

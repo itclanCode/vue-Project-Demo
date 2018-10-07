@@ -1,0 +1,184 @@
+.taxProInfo-container{
+  .taxproBaseInfo,.server-list,.wtxylist{
+    padding-bottom: 20px;
+    .base-header{
+      font-size:20px;
+      text-align:left;
+      font-weight:bold;
+      padding-bottom:15px;
+    }
+    .text-center{
+      padding-bottom: 15px;
+    }
+    .box-card{
+      text-align:left;
+      .el-card__body{
+        padding:20px 18px 0px 18px;
+      }
+      .card-header{
+        h2{
+          max-width:390px;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space: nowrap;
+          color:#000;
+          font-weight:bold;
+          font-size:16px;
+          a{
+            color: #111;
+          }
+        }  
+      }
+      .card-content{
+        div.el-col{
+          p{
+            padding:15px 0px;
+            border-bottom:1px solid #CFCFCF
+            a{
+              color:#111;
+            }
+          }
+          p.text-over{
+            max-width:195px;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          div:last-child{
+            p{
+              border-bottom: none;
+            }
+          }
+          .tyxycode{
+            max-width:389px;
+            white-space: nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            font-weight:bold;
+            border-bottom:1px solid #A2A2A2
+            a{
+              color: #111;
+            }
+          }
+          h2{
+            padding-top:16px;
+            font-weight:bold;
+          }
+        }
+        div.p-12{
+          padding-left:12px;
+        }
+      }
+    }
+  }
+  // 服务人员列表
+  .server-list{
+    h2{
+      font-size:20px;
+      color:#111;
+    }
+    .head-card{
+      display:flex;
+      display:-webkit-flex;
+      flex-direction:row;
+      align-items:left;
+      p{
+        flex:1;
+        font-weight:bold;
+      }
+    }
+    .card-content{
+    width:100%;
+     ul{
+       width:100%;
+       &.server-list{
+        li{
+         border-bottom:1px solid #E3E3E3;
+        p{
+          width: 32%;
+          max-width:125px;
+          overflow:hidden;
+          white-space:nowrap;
+          text-overflow: ellipsis;
+          padding: 22px 0px 5px;
+          display: inline-block;
+          &.text-center{
+            text-align:center;
+          }
+          &:first-child{
+            >a{
+              color:#2770E9;
+            }
+          }
+          a{
+            color:#111;
+          }
+        }
+        p:first-child{
+          color:#2770E9;
+        }
+       }
+      }
+     }
+     ul.hide{
+       max-height: 257px;
+       overflow:hidden;
+     }
+     ul.show{
+       height: 100%;
+     }
+     >p{
+       padding:0px 0px 18px;
+       position:relative;
+       cursor:pointer;
+       &.text-left{
+         padding-top:15px;
+      }
+       a{
+         font-size:13px;
+         color:#2770E9;
+         font-weight:bold;
+       }
+       .el-icon-rep-jiantou{
+          position: absolute;
+          top: 2px;
+          color: #2770e9;
+          font-size: 12px;
+       }
+       i.up{
+         transform: rotate(30deg);
+         -webkit-transform: rotate(90deg);
+       }
+     } 
+    } 
+  }
+  // 委托协议列表
+  .wtxylist{
+    h2{
+      text-align:left;
+      font-weight:bold;
+    }
+    .el-table{
+      thead{
+        font-weight: bold;
+        color: #111;
+      }
+      .cell{
+        text-align:left;
+        line-height: 40px;
+        max-width: 180px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        a{
+         color: #606266;
+        }
+      }  
+    }
+    .page-pagiation{
+      padding-top:20px;
+      text-align:right;
+    }
+  } 
+  
+}
